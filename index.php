@@ -1,5 +1,4 @@
 <?
-	echo "hello donstroi";
 ?>
 <!doctype html>
 <html lang="ru">
@@ -87,6 +86,28 @@
             </span>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="mt-4 btn_help_container">
+      <div>
+        <input value="Заказать остекление" type="button" class="btn_shema_p">
+      </div>
+      <div>
+        <input value="Наши работы" type="button" class="btn_shema_p">
+      </div>
+      <div>
+        <input value="Заказать окраску" type="button" class="btn_shema_p">
+      </div>
+    </div>
+    <div class="mt-4 btn_help_container">
+      <div>
+        <input value="Заказать замер" type="button" class="btn_shema_p">
+      </div>
+      <div>
+        <input value="Задать вопрос" type="button" class="btn_shema_p">
+      </div>
+      <div>
+        <input value="Заказать звонок" type="button" class="btn_shema_p">
       </div>
     </div>
     <div class="container-fluid mt-4">

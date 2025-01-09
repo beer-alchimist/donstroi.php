@@ -214,3 +214,23 @@ a{
     text-decoration: none;
     color: white;
 }
+
+.btn_help_container{
+    display: flex !important;
+    justify-content: space-around !important;
+    padding: 1% !important;
+}
+
+.btn_help_container input{
+    background-color: var(--logo-color);
+    color: var(--navbar-text-color);
+    border-radius: 10px;
+}
+
+.btn_help_container input:hover{
+    background-color: var(--navbar-bg-color)!important;
+}
+
+.btn_help_container div {
+    padding: 3%!important;
+}
