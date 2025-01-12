@@ -30,10 +30,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="/catalog_window">Остекление окон</a>
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#osteclenie" aria-disabled="true">Остекление окон</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/catalog_color" tabindex="-1" aria-disabled="true">Окраска окнон</a>
+              <a class="nav-link" data-bs-target="#okraska" aria-disabled="true" >Окраска окнон</a>
             </li>
             <li class="nav-item">
               <a class="nav-link dogovor_container" data-bs-toggle="modal" data-bs-target="#zvonok">Заказать звонок</a>
@@ -90,24 +90,24 @@
     </div>
     <div class="mt-4 btn_help_container">
       <div>
-        <input value="Заказать остекление" type="button" class="btn_shema_p">
+        <input value="Заказать остекление" type="button" class="btn_shema_p" data-bs-toggle="modal" data-bs-target="#osteclenie">
       </div>
       <div>
-        <input value="Наши работы" type="button" class="btn_shema_p">
+        <input value="Наши работы" type="button" class="btn_shema_p" data-bs-toggle="modal" data-bs-target="#our_works">
       </div>
       <div>
-        <input value="Заказать окраску" type="button" class="btn_shema_p">
+        <input value="Заказать окраску" type="button" class="btn_shema_p" data-bs-toggle="modal" data-bs-target="#okraska">
       </div>
     </div>
     <div class="mt-4 btn_help_container">
       <div>
-        <input value="Заказать замер" type="button" class="btn_shema_p">
+        <input value="Заказать замер" type="button" class="btn_shema_p" data-bs-toggle="modal" data-bs-target="#zamer">
       </div>
       <div>
-        <input value="Задать вопрос" type="button" class="btn_shema_p">
+        <input value="Задать вопрос" type="button" class="btn_shema_p" data-bs-toggle="modal" data-bs-target="#zvonok">
       </div>
       <div>
-        <input value="Заказать звонок" type="button" class="btn_shema_p">
+        <input value="Заказать звонок" type="button" class="btn_shema_p" data-bs-toggle="modal" data-bs-target="#zvonok">
       </div>
     </div>
     <div class="container-fluid mt-4">
@@ -354,6 +354,7 @@
         </div>
       </div>
     </div>
+    <!--modal-->
     <div class="modal fade" id="zvonok" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -369,6 +370,71 @@
         </div>
       </div>
     </div>
+    <div class="modal fade" id="osteclenie" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Оформление остекления</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">X</button>
+          </div>
+          <div class="modal-body" id="corzina">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="our_works" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Наши работы</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">X</button>
+          </div>
+          <div class="modal-body" id="corzina">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="okraska" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Оформление окраски</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">X</button>
+          </div>
+          <div class="modal-body" id="corzina">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="zamer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Заказ замера</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">X</button>
+          </div>
+          <div class="modal-body" id="corzina">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--/modal-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
